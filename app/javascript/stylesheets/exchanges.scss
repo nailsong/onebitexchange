@@ -1,0 +1,37 @@
+body {
+  background: url("~images/background-img.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.title-box {
+  margin-top: 40%;
+
+  .title {
+    color: rgb(232, 234, 240);
+    text-shadow: 2px 0px 2px #462c2c;
+  }
+
+  .subtitle {
+    color: rgb(232, 234, 240);
+    text-shadow: 3px 0px 3px #533838;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.exchange_box {
+  margin: 10px auto;
+
+  .logo-box {
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
