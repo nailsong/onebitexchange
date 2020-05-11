@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+O OneBitExchange é um site para conversão de moedas.
 
 * Ruby version
 
+  - ruby 2.6.5
+
 * System dependencies
 
-* Configuration
+  - PostgreSQL
 
-* Database creation
+* Docker to project
 
-* Database initialization
+ - docker-compose build
+ - docker-compose up
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+  - docker-compose run --rm app bundle exec rspec
 
 * Deployment instructions
 
-* ...
+
