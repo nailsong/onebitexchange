@@ -9,6 +9,7 @@ class ExchangesController < ApplicationController
       params[:target_currency],
       params[:amount]
     ).call
+
     render json: { "value": value }
   end
 end

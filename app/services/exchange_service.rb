@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require('rest-client')
-require('json')
+require 'rest-client'
+require 'json'
 
 class ExchangeService
   def initialize(source_currency, target_currency, amount)
@@ -11,10 +11,12 @@ class ExchangeService
   end
 
   def call
-    value = get_exchange
-    value * @amount.to_f
-  rescue RestClient::ExceptionWithResponse => e
-    e.response
+    if @source_currency == 'BTC'
+      TobtcService.new(@source_currency, @amount).call
+    else
+      value = get_exchange
+      value * @amount.to_f
+    end
   end
 
   private

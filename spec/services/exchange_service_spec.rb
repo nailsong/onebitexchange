@@ -10,7 +10,7 @@ describe ExchangeService do
     {
       currency: [
         {
-           currency: '#{source_currency}/#{target_currency}',
+           currency: "#{source_currency}/#{target_currency}",
            value: exchange_value,
            date: Time.now,
            type: 'Original'
@@ -20,10 +20,10 @@ describe ExchangeService do
   end
 
   before do
-    allow(RestClient).to receive(:get) { 
+    allow(RestClient).to receive(:get) {
       OpenStruct.new(
         body: api_return.to_json
-      ) 
+      )
     }
   end
 
